@@ -1,0 +1,174 @@
+@b    : #000;
+@w    : #fff;
+@g    : #CBCCCE;
+@main : #B1923D;
+
+@beige: #F2F0F3;
+
+.font{
+  font-family: 'Lato', sans-serif;
+}
+.font2{
+  font-family: 'Saira Extra Condensed', sans-serif;
+
+}
+
+body{
+  background-color: @beige;
+}
+
+/* SLIDER ----------------------- */
+
+.slider{
+  img{
+    width: 100%;
+  }
+}
+.slick-arrow{
+  position: absolute; top: 50%; z-index: 9;
+  font-size: 0;
+  background: transparent; border: none;
+  color:@w;
+  text-shadow: 0 0 10px rgba(0,0,0,0.4);
+  margin: -22px 10px 0 10px;
+  cursor: pointer;
+  &:focus{outline: none;}
+  &:after{
+    font: normal normal normal 44px/1 FontAwesome;
+  }
+  &.slick-prev{
+    left: 0;
+    &:after{content:"\f053";}
+  }
+  &.slick-next{
+    right: 0;
+    &:after{content:"\f054";}
+  }
+}
+
+
+.title{
+      .font2;
+      font-size: 3rem;
+
+}
+
+
+
+/* SITE ########################################################## */
+.topbar{
+  background: @g;
+  font-size: 0.8rem;
+  padding: 8px 0;
+  a{color:@b;}
+}
+.navbar{
+  z-index: 99 !important;
+  margin-top: 5px;
+  background: transparent;
+  border-top: 1px solid @g;
+  border-bottom: 1px solid @g;
+  a{
+    color:@b;
+    &.is-active, &:hover{ background: transparent; color: @main;}
+
+  }
+}
+
+.is-sticky .navbar{
+  background: rgba(255,255,255,0.5);
+  margin-top: 0;
+}
+
+header{
+  background-image: url(img/educacion-digital.jpg);
+  background-position: center top;
+  background-size: cover;
+  min-height: 800px;
+  .top{
+    padding: 20px 0;
+    .button{
+      background: transparent;
+      border: none;
+      color:@b;
+      &:hover{
+        color: @main;
+      }
+    }
+  }
+  .maintext{
+    color:@b;
+    margin-top: 200px;
+    h2{
+      .font2;
+      font-size: 7rem;
+      line-height: 1;
+      @media (max-width:600px){ font-size: 5rem; }
+    }
+
+  }
+}
+
+#nosotros, #contacto{
+  height: 800px;
+  border-bottom: 2px solid @b;
+}
+
+footer{
+  background: @g;
+  a.navbar-item, a{
+    color:@b;
+    &:hover{
+      color:@main;
+    }
+  }
+}
+
+#tips, #cursos{
+
+  .card{
+    display: flex;
+    background-size: 100%;
+    background-position: center;
+    height: 100%;
+  .card-content{
+    position: relative;
+    z-index: 1;
+  }
+    h3{
+      font-weight: bold;
+      text-align: center;
+      .font2;
+      color:@w;
+      font-size: 2rem;
+      line-height: 1;
+
+    }
+    p{color:@w; line-height: 1;}
+    border-radius: 10px;
+    border: 4px solid @w;
+    box-shadow: 0 8px 20px @beige/1.2;
+    transition: all .3s;
+    &:hover{
+      background-size:200%;
+      text-shadow: 0 0 10px @beige/1.4;
+      transition: all .3s;
+    }
+    position: relative;
+    &:before{
+      content:""; display: block;
+      position: absolute;
+      left: 0; right: 0; top: 0; bottom: 0;
+      background: rgba(0,0,0,0.4);
+    }
+  }
+  .media{
+    h3{.font2;}
+    background: @w;
+    border: 4px solid @beige/1.1;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+  }
+
+}

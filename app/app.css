@@ -1,0 +1,183 @@
+.font {
+  font-family: 'Lato', sans-serif;
+}
+.font2 {
+  font-family: 'Saira Extra Condensed', sans-serif;
+}
+body {
+  background-color: #F2F0F3;
+}
+/* SLIDER ----------------------- */
+.slider img {
+  width: 100%;
+}
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 9;
+  font-size: 0;
+  background: transparent;
+  border: none;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  margin: -22px 10px 0 10px;
+  cursor: pointer;
+}
+.slick-arrow:focus {
+  outline: none;
+}
+.slick-arrow:after {
+  font: normal normal normal 44px/1 FontAwesome;
+}
+.slick-arrow.slick-prev {
+  left: 0;
+}
+.slick-arrow.slick-prev:after {
+  content: "\f053";
+}
+.slick-arrow.slick-next {
+  right: 0;
+}
+.slick-arrow.slick-next:after {
+  content: "\f054";
+}
+.title {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 3rem;
+}
+/* SITE ########################################################## */
+.topbar {
+  background: #CBCCCE;
+  font-size: 0.8rem;
+  padding: 8px 0;
+}
+.topbar a {
+  color: #000;
+}
+.navbar {
+  z-index: 99 !important;
+  margin-top: 5px;
+  background: transparent;
+  border-top: 1px solid #CBCCCE;
+  border-bottom: 1px solid #CBCCCE;
+}
+.navbar a {
+  color: #000;
+}
+.navbar a.is-active,
+.navbar a:hover {
+  background: transparent;
+  color: #B1923D;
+}
+.is-sticky .navbar {
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: 0;
+}
+header {
+  background-image: url(img/educacion-digital.jpg);
+  background-position: center top;
+  background-size: cover;
+  min-height: 800px;
+}
+header .top {
+  padding: 20px 0;
+}
+header .top .button {
+  background: transparent;
+  border: none;
+  color: #000;
+}
+header .top .button:hover {
+  color: #B1923D;
+}
+header .maintext {
+  color: #000;
+  margin-top: 200px;
+}
+header .maintext h2 {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 7rem;
+  line-height: 1;
+}
+@media (max-width: 600px) {
+  header .maintext h2 {
+    font-size: 5rem;
+  }
+}
+#nosotros,
+#contacto {
+  height: 800px;
+  border-bottom: 2px solid #000;
+}
+footer {
+  background: #CBCCCE;
+}
+footer a.navbar-item,
+footer a {
+  color: #000;
+}
+footer a.navbar-item:hover,
+footer a:hover {
+  color: #B1923D;
+}
+#tips .card,
+#cursos .card {
+  display: flex;
+  background-size: 100%;
+  background-position: center;
+  height: 100%;
+  border-radius: 10px;
+  border: 4px solid #fff;
+  box-shadow: 0 8px 20px #cac8cb;
+  transition: all .3s;
+  position: relative;
+}
+#tips .card .card-content,
+#cursos .card .card-content {
+  position: relative;
+  z-index: 1;
+}
+#tips .card h3,
+#cursos .card h3 {
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+}
+#tips .card p,
+#cursos .card p {
+  color: #fff;
+  line-height: 1;
+}
+#tips .card:hover,
+#cursos .card:hover {
+  background-size: 200%;
+  text-shadow: 0 0 10px #adabae;
+  transition: all .3s;
+}
+#tips .card:before,
+#cursos .card:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+#tips .media,
+#cursos .media {
+  background: #fff;
+  border: 4px solid #dcdadd;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+}
+#tips .media h3,
+#cursos .media h3 {
+  font-family: 'Saira Extra Condensed', sans-serif;
+}
+/*# sourceMappingURL=app.css.map */

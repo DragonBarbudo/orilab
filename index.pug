@@ -1,0 +1,92 @@
+include app/_app
+doctype html
+html(lang="es")
+  head
+    +head
+    title Origen | Educación digital
+    meta(name="description" content="")
+  body
+    //+topbar
+    header
+    
+      .container
+        .level.top
+          .level-left.is-hidden-mobile
+            .level-item
+              a(href="#inicio")
+                img(src="app/img/origen.png", alt="Origen")
+          .level-item.is-hidden-mobile
+            p Educación digital para principiantes, intermedios y avanzados.
+          .level-right
+            .level-item
+              a(href="tel:5510053464").button
+                span.icon
+                  .fa.fa-mobile
+                span 55 100 53 464
+      
+      +navigation(false)
+    
+      .container.maintext
+        h2 EDUCACIÓN DIGITAL
+        h3 Propuestas atrevidas y audaces
+        
+        
+  
+    #tips
+      .container
+        .columns
+          .column.is-6
+            .level
+              .level-left: h2.level-item.title TIPS
+              .level-right: a.level-item.button.is-white.is-small
+                span Ver más
+                span.icon: span.fa.fa-chevron-right
+        .columns
+          .column.is-7
+            article.media
+              .media-content
+                .content
+                  h3.is-size-5 Comienza a diseñar tu sitio web
+                  p.is-size-7 Crear un desarrollo web no es una tarea sencilla, pues existen muchas variables a considerar antes de iniciarse. Para un programador experto esto es tarea de todos los días, por lo que una vez que comienzas, entrarás a una zona de experimentación gigantesca y con cambios constantes.
+              figure.media-right
+                .image.is-128x128: img(src="https://source.unsplash.com/Koxa-GX_5zs/400x400")
+          .column
+            a.card(style="background-image:url(https://source.unsplash.com/1K9T5YiZ2WU/400x400)")
+              .card-content
+                h3 ¿Quién usa Dreamweaver?
+          .column
+            a.card(style="background-image:url(https://source.unsplash.com/TFATaOllUC8/400x400)")
+              .card-content
+                h3 SEO para tu sitio HTML
+    .section: hr
+    #cursos
+      .container
+        .columns
+          .column.is-6
+            .level
+              .level-left: h2.level-item.title CURSOS
+              .level-right: a.level-item.button.is-white.is-small
+                span Ver más
+                span.icon: span.fa.fa-chevron-right
+        .columns
+          .column
+            a.card(style="background-image:url(https://source.unsplash.com/gcsNOsPEXfs/400x600)")
+              .card-content
+                h3 Cómo posicionar tu sitio en 6 meses
+                p Comienza desde 0 a conocer todos los procesos necesarios para que tu sitio se posicione en los primeros lugares de los buscadores más utilizados.
+          .column
+            a.card(style="background-image:url(https://source.unsplash.com/TkZYCXmrKK4/400x600)")
+              .card-content
+                h3 HTML + CSS: Las herramientas del futuro
+                p ¿Sabías que el HTML y CSS se pueden utilizar en muchísimas más cosas además de diseño web?. Aprende sobre APPS y Widgets en este curso express. 
+          .column
+            a.card(style="background-image:url(https://source.unsplash.com/VW2oU66mwbc/400x600)")
+              .card-content
+                h3 Crea un videojuego con HTML5 en 6 horas
+                p En este curso aprenderás sobre el desarrollo de un videojuego, desde la creación de los gráficos hasta la publicación en línea.
+      
+    .section: hr
+    
+    +footer
+    
+    +scripts
